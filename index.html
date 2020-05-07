@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Newprovidence</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/newprovidence.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <!--Sprite-->
+  <svg style="display: none;">
+    <symbol id="twitter" viewBox="0 0 512 512">
+      <g>
+    		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+    			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+    			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+    			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+    			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+    			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+    			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+    			C480.224,136.96,497.728,118.496,512,97.248z"/>
+    	</g>
+    </symbol>
+  </svg>
+
+  <svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <g>
+    		<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+    	</g>
+    </symbol>
+  </svg>
+
+  <svg style="display: none;">
+    <symbol id="google" viewBox="0 0 24 24">
+      <g>
+        <path d="m21.823 9h-2.187v2.177h-2.177v2.187h2.177v2.177h2.187v-2.177h2.177v-2.187h-2.177z"/><path d="m7.5 19.5c4.328 0 7.203-3.038 7.203-7.326 0-.491-.051-.87-.122-1.248h-7.08v2.578h4.257c-.174 1.095-1.289 3.233-4.257 3.233-2.557 0-4.645-2.118-4.645-4.737s2.087-4.738 4.645-4.738c1.463 0 2.435.624 2.988 1.156l2.036-1.954c-1.311-1.227-2.999-1.964-5.025-1.964-4.144 0-7.5 3.356-7.5 7.5s3.356 7.5 7.5 7.5z"/></svg>
+    	</g>
+    </symbol>
+  </svg>
+
+  <svg style="display: none;">
+    <symbol id="tumbler" viewBox="0 0 24 24">
+      <g>
+    		<path d="m19 22.594-1.175-3.425c-.458.214-1.327.399-1.968.419h-.091c-1.863 0-2.228-1.37-2.244-2.371v-7.47h4.901v-3.633h-4.883v-6.114h-3.575c-.059 0-.162.051-.176.179-.202 1.873-1.098 5.156-4.789 6.469v3.099h2.456v7.842c0 2.655 1.97 6.411 7.148 6.411l-.011-.002h.181c1.786-.03 3.783-.768 4.226-1.404z"/></svg>
+    	</g>
+    </symbol>
+  </svg>
+
+  <svg style="display: none;">
+    <symbol id="pinterest" viewBox="0 0 24 24">
+      <g>
+    		<path d="m12.326 0c-6.579.001-10.076 4.216-10.076 8.812 0 2.131 1.191 4.79 3.098 5.633.544.245.472-.054.94-1.844.037-.149.018-.278-.102-.417-2.726-3.153-.532-9.635 5.751-9.635 9.093 0 7.394 12.582 1.582 12.582-1.498 0-2.614-1.176-2.261-2.631.428-1.733 1.266-3.596 1.266-4.845 0-3.148-4.69-2.681-4.69 1.49 0 1.289.456 2.159.456 2.159s-1.509 6.096-1.789 7.235c-.474 1.928.064 5.049.111 5.318.029.148.195.195.288.073.149-.195 1.973-2.797 2.484-4.678.186-.685.949-3.465.949-3.465.503.908 1.953 1.668 3.498 1.668 4.596 0 7.918-4.04 7.918-9.053-.016-4.806-4.129-8.402-9.423-8.402z"/></svg>
+    	</g>
+    </symbol>
+  </svg>
+
+  <svg style="display: none;">
+    <symbol id="linkedin" viewBox="0 0 24 24">
+      <g>
+    		<path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
+    	</g>
+    </symbol>
+  </svg>
+
+      <!--HEADER------------------------------------------>
+    <div class="wrap">
+      <header class="header">
+          <div class="container">
+            <div class="header__inner">
+
+              <nav class="nav">
+                  <a class="nav__image" href="#" id="check"><img src="img/menu-icon.png" alt=""></a>
+                  <a class="nav__link" href="#iphone__screen">Tour</a>
+                  <a class="nav__link" href="#features">Features</a>
+                  <a class="nav__link" href="#pricing">Pricing</a>
+              </nav>
+
+              <div class="header__logo">
+                <img class="logo__image" src="img/header-logo.png" alt="">
+                <h3 class="logo"><span class="logo__bold">New</span>Providence</h3>
+              </div>
+
+              <nav class="nav1">
+                <a class="nav1__item" href="#help">Help</a>
+                <a class="nav1__item" href="#footer">Contacts</a>
+                <a class="nav1__button" href="#"><img class="nav1__icon" src="img/apple-icon.png" alt="">Get app</a>
+              </nav>
+              <div class="sidebar" id="sidebar">
+                <ul class="sidebar__list">
+                  <li><a href="">Tour</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="#help">Help</a></li>
+                  <li><a href="#footer">Contacts</a></li>
+                </ul>
+              </div>
+            </div> <!--/.header__inner-->
+          </div> <!--/.container-->
+
+          <div class="intro">
+            <div class="container">
+              <div class="intro__inner">
+                <h1 class="intro__title">What happens tomorrow?</h1>
+                <p class="intro__text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</p>
+                <div class="button">
+                  <a class="inro__button" href="#"><img class="button__icon" src="img/play-icon.png" alt="">Watch video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
+    </div> <!--/.wrap-->
+
+
+      <div class="features" id="features">
+      <div class="container">
+        <div class="features__inner">
+
+          <div class="features__item">
+            <img class="features__icon" src="img/lock icon.png" alt="">
+            <h4 class="features__title">Real-time all the time</h4>
+            <p class="features__text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+            <p class="features__text">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</p>
+          </div>
+
+          <div class="features__item">
+            <img class="features__icon" src="img/clock-icon.png" alt="">
+            <h4 class="features__title">Adopt without any obstacles</h4>
+            <p class="features__text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+            <p class="features__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+          </div>
+
+        </div> <!--/.features__inner-->
+      </div> <!--/.container-->
+    </div> <!--/.feaatures-->
+
+    <div class="iphone">
+      <div class="container">
+        <div class="iphone__item">
+          <div class="iphone__photo">
+            <img class="photo" src="img/iphone.png" alt="">
+          </div>
+          <div class="iphone__content">
+            <div class="title__content">
+              <h2 class="iphone__title">Your day is protected</h2>
+            </div>
+            <p class="iphone__text">There have not been any since we have lived here, said my mother.</p>
+            <p class="iphone__text">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
+            <div class="iphone__button">
+              <a class="content__button" href="#">Try to hack us
+                <img class="button__image" src="img/arrow-icon.png">
+              </a>
+            </div>
+            <div class="iphone__button1">
+              <a class="content__button1" href="#">Learn more</a>
+            </div>
+          </div>
+        </div> <!--/.iphone__item-->
+      </div> <!--/.container-->
+    </div> <!--/.iphone-->
+
+    <div class="map">
+      <div class="container">
+        <div class="map__inner">
+        <div class="map__content">
+          <div class="map__title">
+            <h2 class="map__subtitle">We are almost everywhere</h2>
+          </div>
+            <p class="map__text">Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.</p>
+            <p class="map__text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+          <h6 class="map__partners">Partners</h6>
+              <img class="map__logo" src="img/dropbox-logo.png" alt="">
+              <img class="map__logo" src="img/evernote-logo.png" alt="">
+         </div> <!--/.map__content-->
+
+         <div class="map__photo">
+           <img class="map__image" src="img/map.png" alt="">
+         </div>
+       </div> <!--/.map__inner-->
+      </div> <!--/.container-->
+     </div> <!--/.map-->
+
+     <div class="iphone__screen" id="iphone__screen">
+       <div class="container">
+         <div class="screen__content">
+           <h2 class="screen__title">Beautiful Interface</h2>
+           <div class="screen__stripe"></div>
+           <h6 class="screen__subtitle">Landing screen</h6>
+         </div>
+       </div> <!--/.container-->
+     </div> <!--/.iphone__screen-->
+
+     <div class="buy">
+       <div class="container">
+         <div class="buy__inner">
+           <h6 class="buy__subtitle"><span class="subtitle__bold">New</span>Providence</h6>
+           <h2 class="buy__title">Get it to your smartphone</h2>
+           <form class="buy__email" action="/" method="post">
+             <input class="buy__input" type="email" name="email" placeholder="Enter your email">
+             <input class="buy__submit" type="submit" name="enter" value="Send invite">
+           </form>
+           <h4 class="buy__choose">Or download from</h4>
+           <div class="button-apple">
+             <a class="apple-link" href="#"><div class="apple-text">Download on the<br><span class="apple-bold">App Store</span></div></a>
+             <a href=""><img class="button__apple" src="img/apple-logo.png" alt=""></a>
+           </div>
+         </div> <!--/.buy__inner-->
+       </div> <!--/.container-->
+     </div> <!--/.buy-->
+
+     <div class="customer">
+       <div class="container">
+         <div class="customer__block">
+           <div class="customer__images">
+             <img class="customer__photo" src="img/customer1.png" alt="">
+             <img class="customer__photo" src="img/customer2.png" alt="">
+             <img class="customer__photo" src="img/customer3.png" alt="">
+           </div>
+           <h3 class="customer__title">New Providence is the great UI kit</h3>
+           <p class="customer__text">”Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+           <div class="customer__review">
+             <img class="review__stars" src="img/star-icon.png" alt="">
+             <img class="review__stars" src="img/star-icon.png" alt="">
+             <img class="review__stars" src="img/star-icon.png" alt="">
+             <img class="review__stars" src="img/star-icon.png" alt="">
+             <img class="review__stars" src="img/star-icon.png" alt="">
+           </div>
+           <h4 class="customer__name">Cameron Dowman</h4>
+         </div>
+       </div>
+     </div>
+
+     <div class="plan" id="pricing">
+       <div class="container">
+         <div class="plan__inner">
+           <div class="plan__info">
+             <h2>Choose your perfect plan</h2>
+             <h4 class="plan__subtitle">You are</h4>
+             <div class="plan__cooperate">
+               <a class="cooperate__choose" href="#">Individual</a>
+               <a class="cooperate__choose" href="#">Company</a>
+             </div>
+             <p class="plan__text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+             <p class="plan__text">Have a bigger team?<a class="plan__talk" href=""> Let‘s talk</a></p>
+           </div>
+          <div class="plan__choose">
+            <div class="choose__inner">
+              <div class="starter">
+                <div class="starter__block">
+                  <h4 class="choose__title">Starter</h4>
+                  <h5 class="choose__subtitle">Free</h5>
+                  <div class="choose__block">
+                    <p class="choose__text">Build your schedule every day</p>
+                  </div>
+                  <ul class="choose__list">
+                    <li class="choose__number"><img src="img/on-icon.png" class="choose__on">Unlimeted events</li>
+                    <li class="choose__number"><img src="img/on-icon.png" class="choose__on">Connect Dropbox & Evernote</li>
+                  </ul>
+                  <div class="starter__button">
+                    <a class="starter__text" href="#">Get started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pro">
+                <div class="pro__block">
+                  <h4 class="choose__title">Pro</h4>
+                  <h5 class="choose__subtitle">4.99$</h5>
+                  <div class="choose__block">
+                    <p class="choose__text">Make your life better</p>
+                  </div>
+                  <ul class="choose__list">
+                    <li class="choose__number"><img src="img/on-icon.png" class="choose__on">Unlimeted events</li>
+                    <li class="choose__number"><img src="img/on-icon.png" class="choose__on">Connect Dropbox & Evernote</li>
+                    <li class="choose__number"><img src="img/on-icon.png" class="choose__on">Personal Assistant</li>
+                  </ul>
+                  <div class="pro__button">
+                    <a class="pro__text" href="#">Make me a pro</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="subscribe" id="help">
+       <div class="container">
+         <div class="subscribe__inner">
+           <h2 class="subscribe__title">Subscribe our newsletters</h2>
+           <form class="buy__email" class="" action="/" method="post">
+             <input class="buy__input input-long" type="email" name="email" placeholder="Your email">
+             <input class="buy__submit submit-long" type="submit" name="send" value="Subscribe">
+           </form>
+           <p class="subscribe__text">We promise to never spam you</p>
+          </div>
+         </div>
+       </div>
+     </div>
+
+
+     <footer class="footer" id="footer">
+       <div class="container">
+         <div class="footer__inner">
+           <div class="footer__info">
+             <div class="footer__content">
+               <img src="img/NewProvidence.png" alt="">
+               <p class="info__text">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+            </div>
+             <a href="#"><img class="footer__download" src="img/Download.png" alt=""></a>
+
+             <div class="social">
+               <a class="social__link" href="/">
+                 <svg class="social__icon">
+                   <use xlink:href="#twitter"></use>
+                 </svg>
+               </a>
+               <a class="social__link" href="/">
+                 <svg class="social__icon">
+                   <use xlink:href="#facebook"></use>
+                 </svg>
+               </a>
+               <a class="social__link" href="/">
+                 <svg class="social__icon google-icon">
+                   <use xlink:href="#google"></use>
+                 </svg>
+               </a>
+               <a class="social__link" href="/">
+                 <svg class="social__icon">
+                   <use xlink:href="#tumbler"></use>
+                 </svg>
+               </a>
+               <a class="social__link" href="/">
+                 <svg class="social__icon">
+                   <use xlink:href="#pinterest"></use>
+                 </svg>
+               </a>
+               <a class="social__link" href="/">
+                 <svg class="social__icon">
+                   <use xlink:href="#linkedin"></use>
+                 </svg>
+               </a>
+             </div>
+           </div>
+          <!--<div class="footer__faq">
+             <div class="footer__block">-->
+               <div class="footer__about">
+                <div class="about__content">
+                   <ul class="about__list">
+                     <li class="learn__number"><a class="footer__link" href="/">Learn more</a></li>
+                     <li class="learn__number"><a class="footer__link" href="/">How it works?</a></li>
+                     <li class="learn__number"><a class="footer__link" href="/">Meeting tools</a></li>
+                     <li class="learn__number"><a class="footer__link" href="/">Live streaming</a></li>
+                     <li class="learn__number"><a class="footer__link" href="/">Contact method</a></li>
+                   </ul>
+                </div>
+               </div>
+               <div class="footer__about">
+                 <div class="about__content">
+                 <ul class="about__list">
+                   <li class="learn__number"><a class="footer__link" href="/">About us</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">About us</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Features</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Privacy police</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Terms & Conditions</a></li>
+                 </ul>
+               </div>
+               </div>
+               <div class="footer__about">
+                 <div class="about__content">
+                 <ul class="about__list list-1">
+                   <li class="learn__number"><a class="footer__link" href="/">Support</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">F.A.Q</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Contact us</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Live chat</a></li>
+                   <li class="learn__number"><a class="footer__link" href="/">Phone call</a></li>
+                 </ul>
+               </div>
+               </div>
+            </div>
+             <!--</div>-->
+           <!--</div>-->
+         </div>
+       <div class="footer__create">
+         <div class="container">
+           <div class="create__inner">
+             <p class="create__subtitle">Made by Sanya21</p>
+             <p class="footer__creater">Made with love<img class="footer__image" src="img/footer.png"></p>
+           </div>
+         </div>
+       </div>
+     </footer>
+     <script src="script/app.js"></script>
+  </body>
+</html>
